@@ -1,7 +1,6 @@
-/***from dust i have come, dust i will be***/
 
 #include<bits/stdc++.h>
-
+/***Define Slot***/
 typedef long long int ll;
 typedef unsigned long long int ull;
 
@@ -28,7 +27,7 @@ using namespace std;
 
 int parent[N];
 vector<int> adj[N];
-
+/***Dfs logic***/
 void dfs(int s,int p)
 {
     parent[s]=p;
@@ -38,7 +37,7 @@ void dfs(int s,int p)
             dfs(e,s);
     }
 }
-
+/***Main call***/
 int main()
 {
     freopen("in.txt", "r", stdin);
